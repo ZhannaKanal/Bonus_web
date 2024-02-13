@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>SPORT</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    </head>
+    <body>
+        <section class ="sport">
+            <nav>
+                <a href="kazakhstan.html"><img src="Logo.png"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="file:///C:/Users/Жанна/Desktop/project_3/page1.html">HOME</a></li>
+                        <li><a href="file:///C:/Users/Жанна/Desktop/project_3/page2.html">TRADITION</a></li>
+                        <li><a href="file:///C:/Users/Жанна/Desktop/project_3/page3.html">SPORT</a></li>
+                        <li><a href="file:///C:/Users/Жанна/Desktop/project_3/page4.html">TRANSPORT</a></li>
+                        <li><a href="file:///C:/Users/Жанна/Desktop/project_3/page5.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1>SPORT</h1>
+          <p>Kazakhstan consistently performs in Olympic competitions.</p>
+          <div class="row">
+              <div class="sport-col">
+                  <embed type="image/jpg" src="Bandy.jpg" >
+                  <video src="bandy.MOV" width="100%" height="200px" controls></video>
+                  <audio src="anthem.mp3" controls></audio>
+                  <h3>Bandy</h3>
+                  <p>Bandy – The Kazakhstan national bandy team is among the best in the world, 
+                      and has many times won the bronze medal at the Bandy World Championship, including the 2012 edition when Kazakhstan hosted the tournament on home ice.</p>
+              </div>
+              <div class="sport-col">
+                  <img src="Basketball.jpg">
+                 <!--<video src="basketball.MOV" width="100%" height="200px" controls></video>--> 
+                 <iframe id="aud"src="https://vk.com/video_ext.php?oid=-28095740&id=456239476&hash=f1a7537471be5543&hd=2" width="100%" height="200px"></iframe>
+                  <audio src="anthem.mp3" controls muted></audio>
+                  <button onclick="onChange()">High</button>
+                  <button onclick="onChange2()">Small</button>
+                  <h3>Basketball</h3>
+                  <p>Kazakhstan's national basketball team was established in 1992, after the dissolution of the Soviet Union. Since its foundation, it has been competitive at the continental level.</p>
+              </div>
+              <div class="sport-col">
+                  <img src="Boxing.jpg">
+                  <video src="boxing.MOV" width="100%" height="200px" controls loop></video>
+                  <object data="anthem.mp3" width=400px height=60px></object>
+                  <h3>Boxing</h3>
+                  <p>Kazakh boxers are generally well known in the world. In the last three Olympic Games, their performance was assessed as one of the best and they had more medals than any country in the world, except Cuba and Russia (in all three games). </p>
+              </div>
+          </div>
+      </section>
+      <script>
+          function onChange(){
+              document.getElementById("aud").width="500";
+              document.getElementById("aud").height="300px";
+
+          }
+          function onChange2(){
+              document.getElementById("aud").width="300px";
+              document.getElementById("aud").height="200px";
+
+          }
+      </script>
+      
+    </body>
+</html>

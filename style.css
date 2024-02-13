@@ -1,0 +1,387 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(Kazakhstan1.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(17, 15, 15);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(82, 68, 66);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100vh;
+   
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 2px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 2px solid rgb(82, 68, 66);
+    background: rgb(82, 68, 66);
+    transition: 1s ;
+}
+
+.carousel-caption h5{
+    font-size: 65px;
+}
+.carousel-caption p{
+    font-size: 16px;
+    color: #fff;
+}
+
+.sport{
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 80px;
+}
+.sport h1{
+    font-size: 65px;
+}
+.sport-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    border: 2px golid hsl(0, 0, 0);
+}
+.sport-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.sport-col embed{
+    width: 100%;
+    border-radius: 10px;
+}
+.sport-col p{
+    padding: 0;
+}
+.sport-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 8%;
+}
+.transport{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 60px;
+}
+.transport h1{
+    font-size: 65px;
+}
+
+.footer{
+    width:100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    text-align: center;
+}
+
+.contact_2{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(Kazakhstan3.jpg);
+    background-size: cover;
+}
+.contact_2 .content_2{
+    max-width: 800px;
+    text-align: center;
+}
+.contact_2 .content_2 h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact_2 .content_2 p{
+    font-weight: 300;
+    color: #fff;
+}
+.zhanna_haha{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.zhanna_haha .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.zhanna_haha .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.zhanna_haha .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.zhanna_haha .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.zhanna_haha .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666; 
+}
+.contactForm .inputBox input:focus ~span,
+.contactForm .inputBox input:valid ~span,
+.contactForm .inputBox textarea:focus ~span,
+.contactForm .inputBox textarea:valid ~span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.imageafterhome img {
+    width: 100%;
+    height: 100vh;
+}
+.imageafterhome p{
+    margin: auto;
+    font-size: 15px;
+    color: rgb(7, 7, 7);
+}
+.imageafterhome{
+    width:100%;
+    text-align: center;
+    position: relative;
+}
+.centered{
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.regform{
+    width: 800px;
+    background-color: rgb(0,0,0,0.6);
+    margin:auto;
+    color:black;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.regform2{
+    background-color: rgb(0,0,0,0.5);
+    width: 800px;
+    margin: auto;
+}
+form{
+    padding:10px;
+}
+#name{
+    width:100%;
+}
+.name{
+    margin-left: 25px;
+    margin-top: 30px;
+    width:250px;
+    color:white;
+    font-size:18px;
+    font-weight: 700;
+}
+.fname{
+    position: relative;
+    left: 250px;
+    top:-37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.option{
+    position: relative;
+    left: 250px;
+    top:-37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+   
+    height:40px;
+    outline: none;
+}
+.rone{
+    display: inline-block;
+    padding-right: 70px;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    outline: none;
+}
+#bttn{
+background-color: rgb(26, 26, 93);
+display: block;
+margin: 20px 0px 0px 20px;
+text-align: center;
+border-radius: 12px;
+padding:14px 110px;
+outline: none;
+color:white;
+cursor: pointer;
+transition: 0.25px;
+}
+#bttn:hover{
+    background-color: rgba(26, 26, 93, 0.51);
+}
+#password{
+    position: relative;
+    left: 250px;
+    top:-37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+#but{
+    color:turquoise;
+    
+}
